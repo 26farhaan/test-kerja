@@ -25,7 +25,7 @@ export default function CustomizedInputBase(props) {
         </IconButton>
         <InputBase
             sx={{ ml: 1, flex: 1 }}
-            placeholder="Search Google Maps"
+            placeholder="Search Data"
             inputProps={{ 'aria-label': 'search google maps' }}
             onChange={(e) => props.change(e.target.value)}
         />
@@ -33,9 +33,6 @@ export default function CustomizedInputBase(props) {
             <SearchIcon />
         </IconButton>
         <Divider sx={{ height: 28, m: 0.5 }} orientation="vertical" />
-        <IconButton color="primary" sx={{ p: '10px' }} aria-label="directions">
-            <DirectionsIcon />
-        </IconButton>
         </Paper>
     );
 }
